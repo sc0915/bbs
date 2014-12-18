@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="userreg" extends="struts-default" namespace="/reg">
+		
+		<action name="first" class="com.shinowit.actions.UserInfoRegAction">
+			<result>/WEB-INF/views/reg.jsp</result>
+		</action>
+	
+		<action name="userinfo" class="com.shinowit.actions.UserInfoRegAction"   method="reg">
+			<result type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="namespace">/index</param>
+			</result>
+			<result name="input">/WEB-INF/views/reg.jsp</result>
+		</action>
+	</package>
+
+</struts>

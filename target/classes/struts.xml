@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+  
+
+	<include file="com/shinowit/actions/reg.xml"></include>
+	<include file="com/shinowit/actions/login.xml"></include>
+	<include file="com/shinowit/inter/inter.xml"></include>
+	<include file="com/shinowit/actions/edit.xml"></include>
+	<include file="com/shinowit/actions/index.xml"></include>
+	<include file="com/shinowit/actions/reply.xml"></include>
+</struts>
